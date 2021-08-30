@@ -1,0 +1,23 @@
+{
+  "name": "elora",
+  "version": "1.0.0",
+  "description": "A React component toolkit for Tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettThurs10/elora.git"
+  },
+  "keywords": [
+    "react",
+    "tailwind"
+  ],
+  "author": "Brett Thurston",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BrettThurs10/elora/issues"
+  },
+  "homepage": "https://github.com/BrettThurs10/elora#readme"
+}
