@@ -1,7 +1,7 @@
 {
   "name": "elora",
-  "version": "1.0.0",
-  "description": "Made with create-react-library",
+  "version": "1.0.4",
+  "description": "Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements.",
   "author": "BrettThurs10",
   "license": "MIT",
   "repository": "BrettThurs10/elora",
@@ -21,19 +21,13 @@
     "test:unit": "cross-env CI=1 react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && npm install && npm run build",
-    "deploy": "gh-pages -d example/build",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
     "react": "^16.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.0",
-    "@storybook/addon-actions": "^6.3.7",
-    "@storybook/addon-essentials": "^6.3.7",
-    "@storybook/addon-links": "^6.3.7",
-    "@storybook/react": "^6.3.7",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",

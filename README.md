@@ -1,3 +1,5 @@
+![Elora logo](https://i.imgur.com/YoLxALe.png)
+
 # Elora - A React component library for Tailwind
 
 Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements. :D
