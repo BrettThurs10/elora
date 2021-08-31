@@ -27,7 +27,7 @@ const myButton = () => {
     <Button
       buttonText='My magic button'
       type='pill'
-      onClick="()=>alert('Bibbity bobbity boop')"
+      onClick={() => alert('Bibbity bobbity boop')}
       name='EloraBtn'
     />
   )
