@@ -1,4 +1,4 @@
-![Elora logo](https://i.imgur.com/YoLxALe.png)
+![Elora logo](https://i.imgur.com/51YX3oQ.png)
 
 # Elora - A React component library for Tailwind
 
