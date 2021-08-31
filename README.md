@@ -1,15 +1,30 @@
-# Elora - React component toolkit for Tailwind
+# elora
 
-Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements. :D
+> Made with create-react-library
 
-## Prequisites
+[![NPM](https://img.shields.io/npm/v/elora.svg)](https://www.npmjs.com/package/elora) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-Tailwind will need to be installed for your React project. See instructions here: https://tailwindcss.com/docs/guides/create-react-app
+## Install
 
-## Installation
+```bash
+npm install --save elora
+```
 
-Simply run 'npm install elora' to install to your React/Tailwind project.
+## Usage
 
-## Components
+```tsx
+import React, { Component } from 'react'
 
-The button component is available now. More to come!
+import MyComponent from 'elora'
+import 'elora/dist/index.css'
+
+class Example extends Component {
+  render() {
+    return <MyComponent />
+  }
+}
+```
+
+## License
+
+MIT © [BrettThurs10](https://github.com/BrettThurs10)
