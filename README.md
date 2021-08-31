@@ -19,8 +19,21 @@ The button component is available now. More to come!
 ## Usage
 
 ```tsx
-import React from "react"
-import
+import React from 'react'
+import Button from 'elora'
+
+const myButton = () => {
+  return (
+    <Button
+      buttonText='My magic button'
+      type='pill'
+      onClick="()=>alert('Bibbity bobbity boop')"
+      name='EloraBtn'
+    />
+  )
+}
+
+// See JSDocs for more button props to use
 ```
 
 ## License
