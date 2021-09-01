@@ -1,6 +1,6 @@
-import React, { ReactElement } from "react";
-import IButtonProps from "./IButtonProps";
-import { handleOnClick, handleClassName } from "./buttonLogic";
+import React, { ReactElement } from 'react'
+import IButtonProps from './IButtonProps'
+import { handleOnClick, handleClassName } from './buttonLogic'
 
 /**
  * @component for the all mighty button.
@@ -68,19 +68,19 @@ function index({
   name,
   onClick,
   type,
-  value,
+  value
 }: IButtonProps): ReactElement {
   return (
     <button
-      form={form && form}
-      formEncType={formEncType && formEncType}
-      formMethod={formMethod && formMethod}
-      formNoValidate={formNoValidate && formNoValidate}
-      formTarget={formTarget && formTarget}
-      name={name && name}
+      form={form}
+      formEncType={formEncType}
+      formMethod={formMethod}
+      formNoValidate={formNoValidate}
+      formTarget={formTarget}
+      name={name}
       onClick={() => handleOnClick(onClick)}
-      type={type ? type : "button"}
-      value={value && value}
+      type={type ? type : 'button'}
+      value={value}
       className={handleClassName(
         classNameOverride,
         customColor,
@@ -88,11 +88,11 @@ function index({
         className
       )}
     >
-      {icon && icon}
-      {buttonText && buttonText}
-      {children && children}
+      {icon}
+      {buttonText}
+      {children}
     </button>
-  );
+  )
 }
 
-export default index;
+export default index
