@@ -1,10 +1,14 @@
 import React from 'react'
 
-import { ExampleComponent } from 'elora'
+import { Button } from 'elora'
 import 'elora/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <div>
+      <Button buttonText='hey there' />
+    </div>
+  )
 }
 
 export default App
