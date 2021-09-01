@@ -1,4 +1,6 @@
-export default interface Props {
+import { ButtonHTMLAttributes } from 'react'
+
+export default interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   autofocus?: boolean
   buttonStyle?:
     | 'simple'
@@ -16,7 +18,6 @@ export default interface Props {
   disabled?: boolean
   icon?: any
   name?: string
-  onClick?: Function
   type?: 'button' | 'reset' | 'submit'
   value?: string
 }

@@ -1,4 +1,4 @@
-import React, { ReactElement } from 'react'
+import React from 'react'
 import IButtonProps from './IButtonProps'
 import { handleOnClick, handleClassName } from './buttonLogic'
 
@@ -39,7 +39,7 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  */
 
 const index = React.forwardRef<HTMLButtonElement, IButtonProps>(
-  (props, ref) => (
+  (props, ref, ...rest) => (
     <button
       ref={ref}
       name={props.name}
@@ -52,6 +52,7 @@ const index = React.forwardRef<HTMLButtonElement, IButtonProps>(
         props.buttonStyle,
         props.className
       )}
+      {...rest}
     >
       {props.icon}
       {props.children}
