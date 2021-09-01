@@ -44,25 +44,25 @@ const myButton = () => {
 
 **@param {JsxElement} children** - Optional: Put any React components you want inside your Button tag.
 @example
-<Button className="styles.coolButton">
+<code><Button className="styles.coolButton">
 <ReallyNiceSVGIcon />
-</Button>
+</Button></code>
 
 **@param {string} className** - Optional: Add a class onto your buttonStyle prop as you see fit. For instance the "pill" buttonStyle has a default background of blue, but you could set this to "bg-pink-600" and it would add to the class attribute, thereby replacing the blue background set with "pill". Likewise, you could simply use the customColor prop in this scenario and set it to just "pink". See customColor for more info.
 @example
-<Button buttonStyle="pill" className="bg-pink-600" />
+<code><Button buttonStyle="pill" className="bg-pink-600" /></code>
 
 **@param {string} classNameOverride** - Optional: Replace the default className prop with someething entirely your own either with a CSS class or a Tailwind string you've cooked up.
 @example
-<Button type="bordered" classNameOverride={styles.wayBetterBorderedBtn} />
+<code><Button type="bordered" classNameOverride={styles.wayBetterBorderedBtn} /></code>
 
 **@param {string} customColor** - Optional: Set the primary color you want the button to have.
 @example
-<Button buttonText="I prefer green" customColor="green" />
+<code><Button buttonText="I prefer green" customColor="green" /></code>
 
 **@param {string} form** - Optional: Set the form id string that this button should belong to. Note: this only works if type is set to "submit".
 @example
-<Button buttonText="Submit" onClick={()=>handleSubmit()} form="form_345" />
+<code><Button form="form_345" buttonText="Submit" onClick={handleSubmit()} /></code>
 
 **@param {string} formEncType** - Optional: Set how the form-data should be encrypted. "application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain". Note: this only works if type is set to "submit".
 
@@ -74,7 +74,7 @@ const myButton = () => {
 
 **@param {JSXElement} icon** - Optional: Pass in the JSX element you want to act as your icon for buttonStyle props set to "icon".
 @example
-<Button buttonText="Download" buttonStyle="icon" icon={DownloadButtonIcon} />
+<code><Button buttonText="Download" buttonStyle="icon" icon={DownloadButtonIcon} /></code>
 
 **@param {string} name** - Optional: Set the name attribute of the button.
 
