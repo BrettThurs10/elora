@@ -27,18 +27,6 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  * @example
  * <Button buttonText="I prefer green" customColor="green" />
  *
- * @param {string} form - Optional: Set the form id string that this button should belong to. Note: this only works if type is set to "submit".
- * @example
- * <Button buttonText="Submit" onClick={()=>handleSubmit()} form="form_345" />
- *
- * @param {string} formEncType - Optional: Set how the form-data should be encrypted. "application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain". Note: this only works if type is set to "submit".
- *
- * @param {string} formMethod - Optional: Set how the form will behave on execution: "get" or "post". Note: this only works if type is set to "submit".
- *
- * @param {boolean} formNoValidate - Optional: Set if you want to validate your form on submission or not. Note: this only works if type is set to "submit".
- *
- * @param {string} formTarget - Optional: Specify where to display the response after submitting the form. "_blank" | "_self" | "_parent" | "_top" | string. Note: this only works if type is set to "submit".
- *
  * @param {JSXElement} icon - Optional: Pass in the JSX element you want to act as your icon for buttonStyle props set to "icon".
  * @example
  * <Button buttonText="Download" buttonStyle="icon" icon={DownloadButtonIcon} />
@@ -52,47 +40,25 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  * @param {string} value - Optional: Set the initial value of the button.
  */
 
-function index({
-  buttonStyle,
-  buttonText,
-  children,
-  className,
-  classNameOverride,
-  customColor,
-  form,
-  formEncType,
-  formMethod,
-  formNoValidate,
-  formTarget,
-  icon,
-  name,
-  onClick,
-  type,
-  value
-}: IButtonProps): ReactElement {
-  return (
+const index = React.forwardRef<HTMLButtonElement, IButtonProps>(
+  (props, ref) => (
     <button
-      form={form}
-      formEncType={formEncType}
-      formMethod={formMethod}
-      formNoValidate={formNoValidate}
-      formTarget={formTarget}
-      name={name}
-      onClick={() => handleOnClick(onClick)}
-      type={type ? type : 'button'}
-      value={value}
+      ref={ref}
+      name={props.name}
+      onClick={() => handleOnClick(props.onClick)}
+      type={props.type ? props.type : 'button'}
+      value={props.value}
       className={handleClassName(
-        classNameOverride,
-        customColor,
-        buttonStyle,
-        className
+        props.classNameOverride,
+        props.customColor,
+        props.buttonStyle,
+        props.className
       )}
     >
-      {icon}
-      {buttonText}
-      {children}
+      {props.icon}
+      {props.children}
     </button>
   )
-}
+)
 
 export default index
