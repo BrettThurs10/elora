@@ -12,7 +12,7 @@ Tailwind will need to be installed for your React project. See instructions here
 
 Simply run 'npm install elora' to install to your React/Tailwind project.
 
-Note: This library is still in it's infancy. Development works, but when you try to build your React app some stylings will be stripped since I'm using string concatination and PurceCSS doesn't know it should be kept. 
+Note: This library is still in it's infancy. Development works, but when you try to build your React app some stylings will be stripped since I'm using string concatination and PurceCSS doesn't know it should be kept.
 
 Workaround: I've found using these instructions when creating your React app the stylings are kept after you run your build.
 https://www.oscarmarion.dev/articles/tailwind-react-cra Essentially these instructions show you how to bypass using CRACO in your config. Expect updates on this topic in the future.
@@ -45,8 +45,6 @@ const myButton = () => {
 
 **@param {string} buttonStyle** - Optional: Choose a button style from "simple", "pill", "3d", "elevated", "disabled", or "icon". Default is set to "simple" within the component if not specified
 
-**@param {string} buttonText** - Optional: Set what you want the button text to be.
-
 **@param {JsxElement} children** - Optional: Put any React components you want inside your Button tag.
 
 @example
@@ -65,25 +63,12 @@ const myButton = () => {
 **@param {string} customColor** - Optional: Set the primary color you want the button to have.
 
 @example
-`<Button buttonText="I prefer green" customColor="green" />`
-
-**@param {string} form** - Optional: Set the form id string that this button should belong to. Note: this only works if type is set to "submit".
-
-@example
-`<Button form="form_345" buttonText="Submit" onClick={handleSubmit()} />`
-
-**@param {string} formEncType** - Optional: Set how the form-data should be encrypted. "application/x-www-form-urlencoded" | "multipart/form-data" | "text/plain". Note: this only works if type is set to "submit".
-
-**@param {string} formMethod** - Optional: Set how the form will behave on execution: "get" or "post". Note: this only works if type is set to "submit".
-
-**@param {boolean} formNoValidate** - Optional: Set if you want to validate your form on submission or not. Note: this only works if type is set to "submit".
-
-**@param {string} formTarget** - Optional: Specify where to display the response after submitting the form. "\_blank" | "\_self" | "\_parent" | "\_top" | string. Note: this only works if type is set to "submit".
+`<Button customColor="green"><p>I am set to green.</p><Button>`
 
 **@param {JSXElement} icon** - Optional: Pass in the JSX element you want to act as your icon for buttonStyle props set to "icon".
 
 @example
-`<Button buttonText="Download" buttonStyle="icon" icon={DownloadButtonIcon} />`
+`<Button buttonStyle="icon" icon={DownloadButtonIcon}><p>Download</p></Button>`
 
 **@param {string} name** - Optional: Set the name attribute of the button.
 

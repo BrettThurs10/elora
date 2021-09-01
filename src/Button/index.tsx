@@ -7,12 +7,10 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  *
  * @param {string} buttonStyle - Optional: Choose a button style from "simple", "pill", "3d", "elevated", "disabled", or "icon". Default is set to "simple" within the component if not specified
  *
- * @param {string} buttonText - Optional: Set what you want the button text to be.
- *
  * @param {JsxElement} children - Optional: Put any React components you want inside your Button tag.
  * @example
  *    <Button className="styles.coolButton">
- *        <ReallyNiceSVGIcon />
+ *        <p>Click me</p>
  *    </Button>
  *
  * @param {string} className - Optional: Add a class onto your buttonStyle prop as you see fit. For instance the "pill" buttonStyle has a default background of blue, but you could set this to "bg-pink-600" and it would add to the class attribute, thereby replacing the blue background set with "pill". Likewise, you could simply use the customColor prop in this scenario and set it to just "pink". See customColor for more info.
@@ -25,11 +23,11 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  *
  * @param {string} customColor - Optional: Set the primary color you want the button to have.
  * @example
- * <Button buttonText="I prefer green" customColor="green" />
+ * <Button customColor="green"><p>I prefer green</p></Button>
  *
  * @param {JSXElement} icon - Optional: Pass in the JSX element you want to act as your icon for buttonStyle props set to "icon".
  * @example
- * <Button buttonText="Download" buttonStyle="icon" icon={DownloadButtonIcon} />
+ * <Button buttonStyle="icon" icon={DownloadButtonIcon}><p>Download</p></Button>
  *
  * @param {string} name - Optional: Set the name attribute of the button.
  *
