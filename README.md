@@ -12,6 +12,11 @@ Tailwind will need to be installed for your React project. See instructions here
 
 Simply run 'npm install elora' to install to your React/Tailwind project.
 
+Note: This library is still in it's infancy. Development works, but when you try to build your React app some stylings will be stripped since I'm using string concatination and PurceCSS doesn't know it should be kept. 
+
+Workaround: I've found using these instructions when creating your React app the stylings are kept after you run your build.
+https://www.oscarmarion.dev/articles/tailwind-react-cra Essentially these instructions show you how to bypass using CRACO in your config. Expect updates on this topic in the future.
+
 ## Components
 
 The button component is available now. More to come!
