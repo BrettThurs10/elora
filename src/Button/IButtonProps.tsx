@@ -16,5 +16,5 @@ export default interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   customColor?: string
   disabled?: boolean
   icon?: JSX.Element
-  type: 'button' | 'reset' | 'submit'
+  type?: 'button' | 'reset' | 'submit'
 }

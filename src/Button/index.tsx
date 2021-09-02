@@ -40,14 +40,12 @@ const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
       customColor = 'blue',
       buttonStyle,
       className,
-      children,
-      type = 'button'
+      children
     },
     ref,
     ...rest
   ) => (
     <button
-      type={type}
       ref={ref}
       className={handleClassName(
         classNameOverride,
