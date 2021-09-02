@@ -1,7 +1,6 @@
 import { ButtonHTMLAttributes } from 'react'
 
 export default interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
-  autofocus?: boolean
   buttonStyle?:
     | 'simple'
     | 'outline'
@@ -11,13 +10,11 @@ export default interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
     | '3d'
     | 'elevated'
     | 'icon'
-  children?: JSX.Element
+  children?: React.ReactNode
   className?: string
   classNameOverride?: string
   customColor?: string
   disabled?: boolean
-  icon?: any
-  name?: string
-  type?: 'button' | 'reset' | 'submit'
-  value?: string
+  icon?: React.ReactNode
+  type: 'button' | 'reset' | 'submit'
 }

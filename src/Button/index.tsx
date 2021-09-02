@@ -29,15 +29,25 @@ import { handleClassName } from './buttonLogic'
  * @example
  * <Button buttonStyle="icon" icon={DownloadButtonIcon}><p>Download</p></Button>
  *
+ *  * @param {string} type - Optional: Set the type of button you want. Defaults to 'button'.
  */
 
 const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
   (
-    { icon, classNameOverride, customColor, buttonStyle, className, children },
+    {
+      icon,
+      classNameOverride,
+      customColor,
+      buttonStyle,
+      className,
+      children,
+      type = 'button'
+    },
     ref,
     ...rest
   ) => (
     <button
+      type={type}
       ref={ref}
       className={handleClassName(
         classNameOverride,
