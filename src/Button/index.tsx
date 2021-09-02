@@ -38,7 +38,7 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  * @param {string} value - Optional: Set the initial value of the button.
  */
 
-const index = React.forwardRef<HTMLButtonElement, IButtonProps>(
+const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
   (props, ref, ...rest) => (
     <button
       ref={ref}
@@ -60,4 +60,4 @@ const index = React.forwardRef<HTMLButtonElement, IButtonProps>(
   )
 )
 
-export default index
+export default Index

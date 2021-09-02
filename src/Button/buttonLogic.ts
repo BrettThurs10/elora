@@ -1,61 +1,49 @@
-import buttonStyles from "./buttonStyle";
+import buttonStyles from './buttonStyle'
 export const determineButtonStyle = (
-  color: string | undefined,
-  buttonStyle: string | undefined
+  color: string = 'blue',
+  buttonStyle: string = 'simple'
 ) => {
-  let buttonType = buttonStyles.simple(color);
   switch (buttonStyle) {
-    case "simple":
-      buttonType = buttonStyles.simple(color);
-      break;
-    case "outline":
-      buttonType = buttonStyles.outline(color);
-      break;
-    case "pill":
-      buttonType = buttonStyles.pill(color);
-      break;
-    case "bordered":
-      buttonType = buttonStyles.bordered(color);
-      break;
-    case "disabled":
-      buttonType = buttonStyles.disabled(color);
-      break;
-    case "3d":
-      buttonType = buttonStyles.threeD(color);
-      break;
-    case "elevated":
-      buttonType = buttonStyles.elevated(color);
-      break;
-    case "icon":
-      buttonType = buttonStyles.icon(color);
-      break;
+    case 'outline':
+      return buttonStyles.outline(color)
+    case 'pill':
+      return buttonStyles.pill(color)
+    case 'bordered':
+      return buttonStyles.bordered(color)
+    case 'disabled':
+      return buttonStyles.disabled(color)
+    case '3d':
+      return buttonStyles.threeD(color)
+    case 'elevated':
+      return buttonStyles.elevated(color)
+    case 'icon':
+      return buttonStyles.icon(color)
     default:
-      buttonType = buttonStyles.simple(color);
+      return buttonStyles.simple(color)
   }
-  return buttonType;
-};
+}
 
 export const handleOnClick = (onClick: Function | undefined) => {
   if (onClick) {
-    onClick();
+    onClick()
   }
-};
+}
 export const handleClassName = (
   classNameOverride?: string,
   customColor?: string,
   buttonStyle?: string,
   className?: string
 ) => {
-  let classNameResult;
   if (classNameOverride) {
-    return classNameOverride;
+    return classNameOverride
   }
+  let classNameResult
   classNameResult = `${determineButtonStyle(
     customColor,
     buttonStyle
-  )} flex items-center`;
+  )} flex items-center`
   if (className) {
-    classNameResult += `${className}`;
+    classNameResult += `${className}`
   }
-  return classNameResult;
-};
+  return classNameResult
+}
