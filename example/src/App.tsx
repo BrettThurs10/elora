@@ -10,8 +10,9 @@ const App = () => {
         name='Elora button'
         customColor='green'
         onClick={() => alert('boop')}
-        buttonText='hey there'
-      />
+      >
+        <p>Hey there</p>
+      </Button>
     </div>
   )
 }
