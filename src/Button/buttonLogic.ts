@@ -22,12 +22,6 @@ export const determineButtonStyle = (
       return buttonStyles.simple(color)
   }
 }
-
-export const handleOnClick = (onClick: Function | undefined) => {
-  if (onClick) {
-    onClick()
-  }
-}
 export const handleClassName = (
   classNameOverride?: string,
   customColor?: string,

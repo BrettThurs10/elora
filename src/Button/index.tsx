@@ -1,6 +1,6 @@
 import React from 'react'
 import IButtonProps from './IButtonProps'
-import { handleOnClick, handleClassName } from './buttonLogic'
+import { handleClassName } from './buttonLogic'
 
 /**
  * @component for the all mighty button.
@@ -29,33 +29,26 @@ import { handleOnClick, handleClassName } from './buttonLogic'
  * @example
  * <Button buttonStyle="icon" icon={DownloadButtonIcon}><p>Download</p></Button>
  *
- * @param {string} name - Optional: Set the name attribute of the button.
- *
- * @param {function} onClick - Optional: Set the function that should run when the user clicks the button.
- *
- * @param {string} type - Optional: Set the button type: "button" | "submit" | "reset". Defaults to "button" if undefined.
- *
- * @param {string} value - Optional: Set the initial value of the button.
  */
 
 const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
-  (props, ref, ...rest) => (
+  (
+    { icon, classNameOverride, customColor, buttonStyle, className, children },
+    ref,
+    ...rest
+  ) => (
     <button
       ref={ref}
-      name={props.name}
-      onClick={() => handleOnClick(props.onClick)}
-      type={props.type ? props.type : 'button'}
-      value={props.value}
       className={handleClassName(
-        props.classNameOverride,
-        props.customColor,
-        props.buttonStyle,
-        props.className
+        classNameOverride,
+        customColor,
+        buttonStyle,
+        className
       )}
       {...rest}
     >
-      {props.icon}
-      {props.children}
+      {icon}
+      {children}
     </button>
   )
 )
