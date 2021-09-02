@@ -30,11 +30,13 @@ import Button from 'elora'
 const myButton = () => {
   return (
     <Button
-      buttonText='My magic button'
+      customColor='green'
       buttonStyle='pill'
       onClick={() => alert('Bibbity bobbity boop')}
       name='EloraBtn'
-    />
+    >
+      <p>Click me</p>
+    </Button>
   )
 }
 ```
