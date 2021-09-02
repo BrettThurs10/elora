@@ -37,7 +37,7 @@ const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
     {
       icon,
       classNameOverride,
-      customColor,
+      customColor = 'blue',
       buttonStyle,
       className,
       children,

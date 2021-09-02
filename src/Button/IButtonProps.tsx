@@ -15,6 +15,6 @@ export default interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {
   classNameOverride?: string
   customColor?: string
   disabled?: boolean
-  icon?: React.ReactNode
+  icon?: JSX.Element
   type: 'button' | 'reset' | 'submit'
 }

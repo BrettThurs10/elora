@@ -1,2 +1,4 @@
 import Button from './Button'
-export { Button }
+import buttonStyles from './Button/buttonStyle'
+import animatedStyles from './styles/animatedStyles'
+export { Button, buttonStyles, animatedStyles }

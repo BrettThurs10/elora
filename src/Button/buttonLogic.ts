@@ -1,8 +1,5 @@
 import buttonStyles from './buttonStyle'
-export const determineButtonStyle = (
-  color: string = 'blue',
-  buttonStyle: string = 'simple'
-) => {
+export const determineButtonStyle = (color?: string, buttonStyle?: string) => {
   switch (buttonStyle) {
     case 'outline':
       return buttonStyles.outline(color)
@@ -37,7 +34,7 @@ export const handleClassName = (
     buttonStyle
   )} flex items-center`
   if (className) {
-    classNameResult += `${className}`
+    classNameResult += ` ${className}`
   }
   return classNameResult
 }
