@@ -1,10 +1,13 @@
 {
   "name": "elora",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements.",
   "author": "BrettThurs10",
   "license": "MIT",
-  "repository": "BrettThurs10/elora",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrettThurs10/elora.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
@@ -62,5 +65,20 @@
   "files": [
     "dist"
   ],
-  "dependencies": {}
+  "dependencies": {},
+  "bugs": {
+    "url": "https://github.com/BrettThurs10/elora/issues"
+  },
+  "homepage": "https://github.com/BrettThurs10/elora#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "react",
+    "tailwind",
+    "reactjs",
+    "tailwindcss",
+    "component",
+    "components"
+  ]
 }
