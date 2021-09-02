@@ -6,6 +6,7 @@
     "plugin:prettier/recommended",
     "prettier/standard",
     "prettier/react",
+    "airbnb-base",
     "plugin:@typescript-eslint/eslint-recommended"
   ],
   "env": {
