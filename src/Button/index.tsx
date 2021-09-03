@@ -7,12 +7,6 @@ import { handleClassName } from './buttonLogic'
  *
  * @param {string} buttonStyle - Optional: Choose a button style from "simple", "pill", "3d", "elevated", "disabled", or "icon". Default is set to "simple" within the component if not specified
  *
- * @param {JsxElement} children - Optional: Put any React components you want inside your Button tag.
- * @example
- *    <Button className="styles.coolButton">
- *        <p>Click me</p>
- *    </Button>
- *
  * @param {string} className - Optional: Add a class onto your buttonStyle prop as you see fit. For instance the "pill" buttonStyle has a default background of blue, but you could set this to "bg-pink-600" and it would add to the class attribute, thereby replacing the blue background set with "pill". Likewise, you could simply use the customColor prop in this scenario and set it to just "pink". See customColor for more info.
  * @example
  * <Button buttonStyle="pill" className="bg-pink-600" />
@@ -24,12 +18,6 @@ import { handleClassName } from './buttonLogic'
  * @param {string} customColor - Optional: Set the primary color you want the button to have.
  * @example
  * <Button customColor="green"><p>I prefer green</p></Button>
- *
- * @param {JSXElement} icon - Optional: Pass in the JSX element you want to act as your icon for buttonStyle props set to "icon".
- * @example
- * <Button buttonStyle="icon" icon={DownloadButtonIcon}><p>Download</p></Button>
- *
- *  * @param {string} type - Optional: Set the type of button you want. Defaults to 'button'.
  */
 
 const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
