@@ -1,7 +1,7 @@
 import React, { ComponentProps } from 'react'
 import { DownloadIcon } from '@heroicons/react/outline'
 import { Story, Meta } from '@storybook/react'
-import { Button, buttonStyles } from '../index'
+import { Button, buttonStyles, animatedStyles } from '../index'
 
 export default {
   title: 'Button',
@@ -72,4 +72,10 @@ ClassNameColorOverride.args = {
   buttonStyle: 'simple',
   customColor: 'pink',
   classNameOverride: buttonStyles.anotherButton
+}
+
+export const ZoomOnHover = Template.bind({})
+ZoomOnHover.args = {
+  buttonStyle: 'simple',
+  className: animatedStyles.zoomOnHover
 }

@@ -28,8 +28,7 @@ export const handleClassName = (
   if (classNameOverride) {
     return classNameOverride
   }
-  let classNameResult
-  classNameResult = `${determineButtonStyle(
+  let classNameResult = `${determineButtonStyle(
     customColor,
     buttonStyle
   )} flex items-center`
