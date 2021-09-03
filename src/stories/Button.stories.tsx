@@ -65,6 +65,7 @@ export const ColorOverride = Template.bind({})
 ColorOverride.args = {
   buttonStyle: 'simple',
   customColor: 'green'
+  onClick: ()=>alert('testing')
 }
 
 export const ClassNameColorOverride = Template.bind({})
