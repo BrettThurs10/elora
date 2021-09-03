@@ -15,6 +15,12 @@ const Template: Story<ComponentProps<typeof Button>> = (args) => (
   </Button>
 )
 
+const IconTemplate: Story<ComponentProps<typeof Button>> = (args) => (
+  <Button {...args} onClick={() => alert('boop')}>
+    <DownloadIcon className={buttonStyles.actualIcon()} /> <p>Download</p>
+  </Button>
+)
+
 export const SimpleButton = Template.bind({})
 SimpleButton.args = {
   buttonStyle: 'simple'
@@ -50,10 +56,9 @@ DisabledButton.args = {
   buttonStyle: 'disabled'
 }
 
-export const IconButton = Template.bind({})
+export const IconButton = IconTemplate.bind({})
 IconButton.args = {
-  buttonStyle: 'icon',
-  icon: <DownloadIcon className={buttonStyles.actualIcon()} />
+  buttonStyle: 'icon'
 }
 
 export const ColorOverride = Template.bind({})

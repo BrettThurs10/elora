@@ -33,25 +33,22 @@ import { handleClassName } from './buttonLogic'
  */
 
 const Index = React.forwardRef<HTMLButtonElement, IButtonProps>(
-  (
-    { icon, classNameOverride, customColor, buttonStyle, className, children },
-    ref,
-    ...rest
-  ) => (
-    <button
-      ref={ref}
-      className={handleClassName(
-        classNameOverride,
-        customColor,
-        buttonStyle,
-        className
-      )}
-      {...rest}
-    >
-      {icon}
-      {children}
-    </button>
-  )
+  (props, ref) => {
+    const { classNameOverride, customColor, buttonStyle, className, ...rest } =
+      props
+    return (
+      <button
+        ref={ref}
+        className={handleClassName(
+          classNameOverride,
+          customColor,
+          buttonStyle,
+          className
+        )}
+        {...rest}
+      />
+    )
+  }
 )
 
 export default Index
