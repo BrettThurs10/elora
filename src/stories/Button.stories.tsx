@@ -58,13 +58,14 @@ DisabledButton.args = {
 
 export const IconButton = IconTemplate.bind({})
 IconButton.args = {
-  buttonStyle: 'icon'
+  buttonStyle: 'icon',
+  onClick: ()=>alert('this is the icon button')
 }
 
 export const ColorOverride = Template.bind({})
 ColorOverride.args = {
   buttonStyle: 'simple',
-  customColor: 'green'
+  customColor: 'green',
   onClick: ()=>alert('testing')
 }
 
