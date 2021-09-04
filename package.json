@@ -1,6 +1,6 @@
 {
   "name": "elora",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements.",
   "author": "BrettThurs10",
   "license": "MIT",
