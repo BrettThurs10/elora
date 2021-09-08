@@ -75,7 +75,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "^3.4.1",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.9",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14",
     "typescript": "^3.7.5"
   },
   "files": [
