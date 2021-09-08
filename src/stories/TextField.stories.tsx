@@ -32,3 +32,44 @@ FullWidthOnFocus.args = {
     inputStyle: 'fullWidthOnFocus',
     placeholder: 'Type something',
 }
+
+export const InputError = Template.bind({})
+InputError.args = {
+    label: 'Here is my label',
+    inputStyle: 'error',
+    placeholder: 'Type something',
+    alertMsg: 'Something is wrong',
+    error: true,
+}
+
+export const HandleOnChange = Template.bind({})
+HandleOnChange.args = {
+    label: "Type in the word 'cat'",
+    inputStyle: 'simple',
+    placeholder: 'Type something',
+    onChange: (e) => {
+        if (e.target.value === 'cat') {
+            alert('Meow')
+            return true
+        } else {
+            return false
+        }
+    },
+}
+
+export const ValidateOnChange = Template.bind({})
+ValidateOnChange.args = {
+    label: "Do not type in the word 'dog'",
+    inputStyle: 'simple',
+    placeholder: 'Type something',
+    validateOnChange: true,
+    alertMsg: 'I said not to type in the word dog',
+    onChange: (e) => {
+        if (e.target.value.toLowerCase() === 'dog') {
+            console.log('Woof woof')
+            return true
+        } else {
+            return false
+        }
+    },
+}
