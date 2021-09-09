@@ -23,7 +23,7 @@ https://www.oscarmarion.dev/articles/tailwind-react-cra Essentially these instru
 
 ## Components
 
-The button component is available now. More to come!
+Current components available are the button component and text field component. More to come soon!
 
 ## Usage
 
@@ -32,23 +32,45 @@ import React from 'react'
 import Button from 'elora'
 
 const myButton = () => {
-  return (
-    <Button
-      customColor='green'
-      className='border shadow border-green-800'
-      buttonStyle='pill'
-      onClick={() => alert('Bibbity bobbity boop')}
-      name='EloraBtn'
-    >
-      <p>Click me</p>
-    </Button>
-  )
+    return (
+        <Button
+            customColor='green'
+            className='border shadow border-green-800'
+            buttonStyle='pill'
+            onClick={() => alert('Bibbity bobbity boop')}
+            name='EloraBtn'
+        >
+            <p>Click me</p>
+        </Button>
+    )
+}
+```
+
+```tsx
+import React from 'react'
+import TextField from 'elora'
+import { validateInput } from './src/scripts/myValidation'
+
+const myTextField = () => {
+    return (
+        <TextField
+            name='My input'
+            inputStyle='icon'
+            onChange={(e) => validateInput(e)}
+            validateOnChange
+            alertMsg='You bibbity bobbitied the boop.'
+        />
+    )
 }
 ```
 
 ### Button props:
 
 See button props here <https://github.com/BrettThurs10/elora/blob/main/src/Button/index.tsx>
+
+### Text Field props:
+
+See text field props here <https://github.com/BrettThurs10/elora/blob/main/src/TextField/index.tsx>
 
 ## License
 
