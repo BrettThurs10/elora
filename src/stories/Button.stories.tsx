@@ -4,80 +4,80 @@ import { Story, Meta } from '@storybook/react'
 import { Button, buttonStyles, animatedStyles } from '../index'
 
 export default {
-  title: 'Button',
-  component: Button
+    title: 'Button',
+    component: Button,
 } as Meta
 
 //👇 We create a “template” of how args map to rendering
 const Template: Story<ComponentProps<typeof Button>> = (args) => (
-  <Button {...args} onClick={() => alert('boop')}>
-    <p>Click me</p>
-  </Button>
+    <Button {...args} onClick={() => alert('boop')}>
+        <p>Click me</p>
+    </Button>
 )
 
 const IconTemplate: Story<ComponentProps<typeof Button>> = (args) => (
-  <Button {...args} onClick={() => alert('boop')}>
-    <DownloadIcon className={buttonStyles.actualIcon()} /> <p>Download</p>
-  </Button>
+    <Button {...args} onClick={() => alert('boop')}>
+        <DownloadIcon className={buttonStyles.actualIcon()} /> <p>Download</p>
+    </Button>
 )
 
 export const SimpleButton = Template.bind({})
 SimpleButton.args = {
-  buttonStyle: 'simple'
+    buttonStyle: 'simple',
 }
 
 export const PillButton = Template.bind({})
 PillButton.args = {
-  buttonStyle: 'pill'
+    buttonStyle: 'pill',
 }
 
 export const OutlineButton = Template.bind({})
 OutlineButton.args = {
-  buttonStyle: 'outline'
+    buttonStyle: 'outline',
 }
 
 export const BorderedButton = Template.bind({})
 BorderedButton.args = {
-  buttonStyle: 'bordered'
+    buttonStyle: 'bordered',
 }
 
 export const ElevatedButton = Template.bind({})
 ElevatedButton.args = {
-  buttonStyle: 'elevated'
+    buttonStyle: 'elevated',
 }
 
 export const ThreeDButton = Template.bind({})
 ThreeDButton.args = {
-  buttonStyle: '3d'
+    buttonStyle: '3d',
 }
 
 export const DisabledButton = Template.bind({})
 DisabledButton.args = {
-  buttonStyle: 'disabled'
+    buttonStyle: 'disabled',
 }
 
 export const IconButton = IconTemplate.bind({})
 IconButton.args = {
-  buttonStyle: 'icon',
-  onClick: ()=>alert('this is the icon button')
+    buttonStyle: 'icon',
+    onClick: () => alert('this is the icon button'),
 }
 
 export const ColorOverride = Template.bind({})
 ColorOverride.args = {
-  buttonStyle: 'simple',
-  customColor: 'green',
-  onClick: ()=>alert('testing')
+    buttonStyle: 'simple',
+    customColor: 'green',
+    onClick: () => alert('testing'),
 }
 
 export const ClassNameColorOverride = Template.bind({})
 ClassNameColorOverride.args = {
-  buttonStyle: 'simple',
-  customColor: 'pink',
-  classNameOverride: buttonStyles.anotherButton
+    buttonStyle: 'simple',
+    customColor: 'pink',
+    classNameOverride: buttonStyles.anotherButton,
 }
 
 export const ZoomOnHover = Template.bind({})
 ZoomOnHover.args = {
-  buttonStyle: 'simple',
-  className: animatedStyles.zoomOnHover
+    buttonStyle: 'simple',
+    className: animatedStyles.zoomOnHover,
 }
