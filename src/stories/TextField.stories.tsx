@@ -1,6 +1,7 @@
 import React, { ComponentProps } from 'react'
 import { Story, Meta } from '@storybook/react'
 import { TextField } from '../index'
+import { IdentificationIcon } from '@heroicons/react/outline'
 
 export default {
     title: 'Text Field',
@@ -72,4 +73,11 @@ ValidateOnChange.args = {
             return false
         }
     },
+}
+
+export const WithIcon = Template.bind({})
+WithIcon.args = {
+    inputStyle: 'icon',
+    placeholder: 'What is your name?',
+    icon: <IdentificationIcon />,
 }

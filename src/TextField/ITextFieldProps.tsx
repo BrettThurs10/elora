@@ -1,4 +1,4 @@
-import { InputHTMLAttributes } from 'react'
+import { InputHTMLAttributes, ReactNode } from 'react'
 export default interface ITextFieldProps
     extends InputHTMLAttributes<HTMLInputElement> {
     inputStyle?: string
@@ -6,4 +6,5 @@ export default interface ITextFieldProps
     alertMsg?: string
     error: boolean
     validateOnChange: boolean
+    icon: ReactNode
 }

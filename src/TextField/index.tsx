@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState, ReactNode } from 'react'
 import ITextFieldProps from './ITextFieldProps'
 import { determineInputClass } from './textFieldLogic'
 import { textFieldStyles } from './textFieldStyles'
@@ -10,6 +10,7 @@ const Index: FC<ITextFieldProps> = ({
     alertMsg,
     inputStyle,
     onChange,
+    icon,
     validateOnChange,
     ...rest
 }) => {
@@ -26,17 +27,27 @@ const Index: FC<ITextFieldProps> = ({
             onChange(e)
         }
     }
+
+    const returnIcon = (inputStyle: string | undefined, icon: ReactNode) => {
+        if (inputStyle === 'icon') {
+            return <div className={textFieldStyles.iconParent}>{icon}</div>
+        }
+        return null
+    }
     return (
         <div className={textFieldWrapper}>
             <label className={textFieldStyles.label} htmlFor={name}>
                 {label}
             </label>
-            <input
-                onChange={(e) => handleOnChange(e, onChange)}
-                className={determineInputClass(inputStyle, hasError)}
-                id={name}
-                {...rest}
-            ></input>
+            <div className='relative'>
+                {returnIcon(inputStyle, icon)}
+                <input
+                    onChange={(e) => handleOnChange(e, onChange)}
+                    className={determineInputClass(inputStyle, hasError)}
+                    id={name}
+                    {...rest}
+                ></input>
+            </div>
             <p className={textFieldStyles.alertMsg}>{hasError && alertMsg}</p>
         </div>
     )
