@@ -25,7 +25,7 @@ https://www.oscarmarion.dev/articles/tailwind-react-cra Essentially these instru
 
 Current components available are the button component and text field component. More to come soon!
 
-## Usage
+## Sample usage
 
 ```tsx
 import React from 'react'
