@@ -1,7 +1,7 @@
 {
     "name": "elora",
     "version": "1.0.14",
-    "description": "Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements.",
+    "description": "Elora is an enchanting component library built in TypeScript for React projects. It's purpose is to be a no fuss library to help you concoct whatever magical stuff you dream up. :D",
     "author": "BrettThurs10",
     "license": "MIT",
     "repository": {
@@ -77,8 +77,6 @@
     ],
     "dependencies": {
         "@heroicons/react": "^1.0.4",
-        "@storybook/preset-scss": "^1.0.3",
-        "@tailwindcss/postcss7-compat": "^2.2.14",
         "autoprefixer": "^9.8.6",
         "classnames": "^2.3.1",
         "fibers": "^5.0.0",
@@ -87,8 +85,7 @@
         "postcss-loader": "^2.1.6",
         "react-refresh": "^0.10.0",
         "react-test-renderer": "^17.0.2",
-        "sass": "^1.42.1",
-        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
+        "sass": "^1.42.1"
     },
     "bugs": {
         "url": "https://github.com/BrettThurs10/elora/issues"
@@ -99,9 +96,7 @@
     },
     "keywords": [
         "react",
-        "tailwind",
         "reactjs",
-        "tailwindcss",
         "component",
         "components"
     ],

@@ -9,14 +9,6 @@ module.exports = {
     ],
     logLevel: 'debug',
     addons: [
-        // {
-        //   name: "@storybook/preset-scss",
-        //   options: {
-        //     cssLoaderOptions: {
-        //       modules: true,
-        //     },
-        //   },
-        // },
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         '@storybook/addon-controls',
