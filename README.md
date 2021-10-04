@@ -1,4 +1,4 @@
-![Elora logo](https://i.imgur.com/6lAn8nu.png)
+![Elora logo](https://i.imgur.com/6nsO0WG.png)
 
 # Elora - A React component library
 
