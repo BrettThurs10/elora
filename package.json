@@ -77,12 +77,17 @@
     ],
     "dependencies": {
         "@heroicons/react": "^1.0.4",
+        "@storybook/preset-scss": "^1.0.3",
         "@tailwindcss/postcss7-compat": "^2.2.14",
         "autoprefixer": "^9.8.6",
+        "classnames": "^2.3.1",
+        "fibers": "^5.0.0",
+        "node-sass": "^6.0.1",
         "postcss": "^7.0.36",
-        "postcss-loader": "^2.0.10",
+        "postcss-loader": "^2.1.6",
         "react-refresh": "^0.10.0",
         "react-test-renderer": "^17.0.2",
+        "sass": "^1.42.1",
         "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.14"
     },
     "bugs": {

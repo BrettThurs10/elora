@@ -46,31 +46,9 @@ const myButton = () => {
 }
 ```
 
-```tsx
-import React from 'react'
-import TextField from 'elora'
-import { validateInput } from './src/scripts/myValidation'
-
-const myTextField = () => {
-    return (
-        <TextField
-            name='My input'
-            inputStyle='icon'
-            onChange={(e) => validateInput(e)}
-            validateOnChange
-            alertMsg='You bibbity bobbitied the boop.'
-        />
-    )
-}
-```
-
 ### Button props:
 
 See button props here <https://github.com/BrettThurs10/elora/blob/main/src/Button/index.tsx>
-
-### Text Field props:
-
-See text field props here <https://github.com/BrettThurs10/elora/blob/main/src/TextField/index.tsx>
 
 ## License
 

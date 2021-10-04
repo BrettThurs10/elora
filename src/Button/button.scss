@@ -1,0 +1,17 @@
+@use '../styles/global.scss';
+
+button {
+    padding: 8px 10px;
+    cursor: pointer;
+    border: solid 1px rgb(var(--gray));
+    background-color: rgba(var(--lightgray), 0.5);
+    &.rounded {
+        border-radius: 6px;
+    }
+    &.pill {
+        border-radius: 2rem;
+    }
+    &:hover {
+        background-color: rgba(var(--lightgray), 1);
+    }
+}

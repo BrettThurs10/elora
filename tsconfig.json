@@ -25,6 +25,6 @@
         "isolatedModules": true,
         "noEmit": true
     },
-    "include": ["src", "tailwind.config.js", "tailwind.config.js"],
+    "include": ["src"],
     "exclude": ["node_modules", "dist", "example"]
 }
