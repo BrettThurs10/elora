@@ -6,19 +6,14 @@ import { Button } from '../index'
 export default {
     title: 'Button',
     component: Button,
+    args: {
+        children: <p>Click me</p>,
+    },
 } as Meta
 
 //👇 We create a “template” of how args map to rendering
 const Template: Story<ComponentProps<typeof Button>> = (args) => (
-    <Button {...args} onClick={() => alert('boop')}>
-        <p>Click me</p>
-    </Button>
-)
-
-const IconTemplate: Story<ComponentProps<typeof Button>> = (args) => (
-    <Button {...args} onClick={() => alert('boop')}>
-        <DownloadIcon /> <p>Download</p>
-    </Button>
+    <Button {...args} onClick={() => alert('boop')} />
 )
 
 export const DefaultButton = Template.bind({})
@@ -32,4 +27,19 @@ RoundedButton.args = {
 export const PillButton = Template.bind({})
 PillButton.args = {
     btnType: 'pill',
+}
+
+export const IconButton = Template.bind({})
+IconButton.args = {
+    heroIconName: 'DownloadIcon',
+    children: <p>Download</p>,
+}
+
+export const CustomStyleButton = Template.bind({})
+CustomStyleButton.args = {
+    style: {
+        backgroundColor: 'transparent',
+        border: '0 solid black',
+        borderBottom: '5px solid purple',
+    },
 }

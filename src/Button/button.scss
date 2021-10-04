@@ -1,6 +1,8 @@
 @use '../styles/global.scss';
 
 button {
+    display: inline-flex;
+    align-items: center;
     padding: 8px 10px;
     cursor: pointer;
     border: solid 1px rgb(var(--gray));
@@ -10,6 +12,10 @@ button {
     }
     &.pill {
         border-radius: 2rem;
+    }
+    & svg.svgIcon {
+        width: 1rem;
+        margin-right: 5px;
     }
     &:hover {
         background-color: rgba(var(--lightgray), 1);
