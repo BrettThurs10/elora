@@ -34,7 +34,7 @@ const MyButton = () => {
 
 const DownloadButton = () => {
     return (
-        <Button heroIconsName='Download' onClick={() => downloadFunction()}>
+        <Button heroIconsName='DownloadIcon' onClick={() => downloadFunction()}>
             <p>Download</p>
         </Button>
     )
