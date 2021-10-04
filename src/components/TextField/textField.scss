@@ -1,0 +1,30 @@
+@use '../../styles/global.scss';
+
+input {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 10px;
+    cursor: pointer;
+    border: solid 1px RGB(var(--gray));
+    background-color: RGBA(var(--lightgray), 0.5);
+    &.rounded {
+        border-radius: 6px;
+    }
+    &.pill {
+        border-radius: 2rem;
+    }
+    &.fullWidth {
+        width: 100%;
+    }
+    &:hover {
+        background-color: RGBA(var(--lightgray), 1);
+    }
+    &::placeholder {
+        color: RGBA(var(--gray), 0.8);
+    }
+}
+
+.svgIcon {
+    width: 1rem;
+    margin-right: 5px;
+}
