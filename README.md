@@ -1,25 +1,18 @@
 ![Elora logo](https://i.imgur.com/6lAn8nu.png)
 
-# Elora - A React component library for Tailwind
+# Elora - A React component library
 
-Elora is a component library built in TypeScript for React developers who use Tailwind in their projects. I wanted to create something that feels as quick and easy to use as slapping together HTML elements...only with JSX elements. :D
+Elora is an enchanting component library built in TypeScript for React projects. It's purpose is to be a no fuss library to help you concoct whatever magical stuff you dream up. :D
 
 ## Demo
 
 <https://brettthurs10.github.io/elora>
 
-## Prequisites
-
-Tailwind will need to be installed for your React project. See instructions here: https://tailwindcss.com/docs/guides/create-react-app
-
 ## Installation
 
-Simply run 'npm install elora' to install to your React/Tailwind project.
+Simply run 'npm install elora' to install to your React project.
 
-Note: This library is still in it's infancy. Development works, but when you try to build your React app some stylings will be stripped since I'm using string concatination and PurceCSS doesn't know it should be kept.
-
-Workaround: I've found using these instructions when creating your React app the stylings are kept after you run your build.
-https://www.oscarmarion.dev/articles/tailwind-react-cra Essentially these instructions show you how to bypass using CRACO in your config. Expect updates on this topic in the future.
+Note: This library is still in it's infancy. The button element is available for now. More to come soon!
 
 ## Components
 
@@ -31,16 +24,18 @@ Current components available are the button component and text field component. 
 import React from 'react'
 import Button from 'elora'
 
-const myButton = () => {
+const MyButton = () => {
     return (
-        <Button
-            customColor='green'
-            className='border shadow border-green-800'
-            buttonStyle='pill'
-            onClick={() => alert('Bibbity bobbity boop')}
-            name='EloraBtn'
-        >
+        <Button btnType='pill' onClick={() => alert('Bibbity bobbity boop')}>
             <p>Click me</p>
+        </Button>
+    )
+}
+
+const DownloadButton = () => {
+    return (
+        <Button heroIconsName='Download' onClick={() => downloadFunction()}>
+            <p>Download</p>
         </Button>
     )
 }

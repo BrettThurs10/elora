@@ -1,5 +1,4 @@
 import React, { ComponentProps } from 'react'
-import { DownloadIcon } from '@heroicons/react/outline'
 import { Story, Meta } from '@storybook/react'
 import { Button } from '../index'
 

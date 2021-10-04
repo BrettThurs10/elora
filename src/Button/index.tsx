@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import IButtonProps from './IButtonProps'
 import * as styles from './button.scss'
 

@@ -5,8 +5,8 @@ button {
     align-items: center;
     padding: 8px 10px;
     cursor: pointer;
-    border: solid 1px rgb(var(--gray));
-    background-color: rgba(var(--lightgray), 0.5);
+    border: solid 1px RGB(var(--gray));
+    background-color: RGBA(var(--lightgray), 0.5);
     &.rounded {
         border-radius: 6px;
     }
@@ -18,6 +18,6 @@ button {
         margin-right: 5px;
     }
     &:hover {
-        background-color: rgba(var(--lightgray), 1);
+        background-color: RGBA(var(--lightgray), 1);
     }
 }
