@@ -34,6 +34,11 @@ IconButton.args = {
     children: <p>Download</p>,
 }
 
+export const FullWidthButton = Template.bind({})
+FullWidthButton.args = {
+    btnType: 'fullWidth',
+}
+
 export const CustomStyleButton = Template.bind({})
 CustomStyleButton.args = {
     style: {

@@ -13,6 +13,10 @@ button {
     &.pill {
         border-radius: 2rem;
     }
+    &.fullWidth {
+        width: 100%;
+        justify-content: center;
+    }
     & svg.svgIcon {
         width: 1rem;
         margin-right: 5px;

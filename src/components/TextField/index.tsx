@@ -19,7 +19,7 @@ const Index = (props: ITextField) => {
         Icon = heroIcons[heroIconName]
     }
     return (
-        <div className={styles.flexboxContainer}>
+        <div className={inputType === 'fullWidth' && styles.flexboxContainer}>
             {heroIconName && (
                 <div className={styles.svgIcon}>
                     <Icon />
