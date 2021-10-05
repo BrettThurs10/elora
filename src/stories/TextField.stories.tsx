@@ -35,7 +35,9 @@ FullWidthTextField.args = {
 
 export const IconTextField = Template.bind({})
 IconTextField.args = {
-    heroIconName: 'DownloadIcon',
+    heroIconName: 'UserIcon',
+    placeholder: 'Username',
+    inputType: 'icon',
 }
 
 export const CustomStyleTextField = Template.bind({})

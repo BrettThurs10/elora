@@ -24,7 +24,18 @@ input {
     }
 }
 
-.svgIcon {
+.svgContainer {
     width: 1rem;
     margin-right: 5px;
+    position: relative;
+    & svg {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.5rem;
+        width: 1rem;
+    }
+}
+
+input.pl30 {
+    padding-left: 30px;
 }

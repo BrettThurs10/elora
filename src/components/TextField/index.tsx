@@ -1,3 +1,4 @@
+import classNames from 'classnames'
 import React from 'react'
 import ITextField from './ITextField'
 import * as styles from './textField.scss'
@@ -7,7 +8,13 @@ import * as styles from './textField.scss'
  */
 
 const Index = (props: ITextField) => {
-    const { heroIconName, iconType = 'outline', inputType, ...rest } = props
+    const {
+        heroIconName,
+        iconType = 'outline',
+        iconPosition = 'left',
+        inputType,
+        ...rest
+    } = props
     const iconOutline = require('@heroicons/react/outline')
     const iconSolid = require('@heroicons/react/solid')
     let heroIcons = iconOutline
@@ -21,11 +28,17 @@ const Index = (props: ITextField) => {
     return (
         <div className={inputType === 'fullWidth' && styles.flexboxContainer}>
             {heroIconName && (
-                <div className={styles.svgIcon}>
+                <div className={styles.svgContainer}>
                     <Icon />
                 </div>
             )}
-            <input className={inputType && styles[inputType]} {...rest} />
+            <input
+                className={classNames(
+                    inputType && styles[inputType],
+                    inputType === 'icon' && styles.pl30
+                )}
+                {...rest}
+            />
         </div>
     )
 }
