@@ -20,7 +20,7 @@ Current components available are the button component and text field component. 
 
 ## Hero Icons
 
-This library utilizes Hero Icons<https://heroicons.com/>. Whenever you see an Elora component use the prop 'heroIconsName' you may pass in the name of the HeroIcon you want that component to use. (See <TextField/>)
+This library utilizes [Hero Icons](https://heroicons.com/, 'Hero Icons'). Whenever you see an Elora component use the prop 'heroIconsName' you may pass in the name of the HeroIcon you want that component to use. (See <TextField/>)
 
 ## Sample usage
 
