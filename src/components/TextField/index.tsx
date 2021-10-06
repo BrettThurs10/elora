@@ -9,7 +9,7 @@ import * as styles from './textField.scss'
 
 const Index = (props: ITextField) => {
     const {
-        heroIconName,
+        heroIconsName,
         iconType = 'outline',
         iconPosition = 'left',
         inputType,
@@ -22,12 +22,12 @@ const Index = (props: ITextField) => {
     if (iconType === 'solid') {
         heroIcons = iconSolid
     }
-    if (heroIconName) {
-        Icon = heroIcons[heroIconName]
+    if (heroIconsName) {
+        Icon = heroIcons[heroIconsName]
     }
     return (
         <div className={inputType === 'fullWidth' && styles.flexboxContainer}>
-            {heroIconName && (
+            {heroIconsName && (
                 <div className={styles.svgContainer}>
                     <Icon />
                 </div>

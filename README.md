@@ -39,6 +39,17 @@ const DownloadButton = () => {
         </Button>
     )
 }
+
+const TextField = () => {
+    return (
+        <TextField
+            inputType='icon'
+            heroIconsName='UserIcon'
+            placeholder='Username'
+            onChange={() => validateUsername()}
+        />
+    )
+}
 ```
 
 ### Button props:
