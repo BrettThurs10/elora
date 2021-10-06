@@ -18,6 +18,10 @@ Note: This library is still in it's infancy. The button element is available for
 
 Current components available are the button component and text field component. More to come soon!
 
+## Hero Icons
+
+This library utilizes Hero Icons<https://heroicons.com/>. Whenever you see an Elora component use the prop 'heroIconsName' you may pass in the name of the HeroIcon you want that component to use. (See <TextField/>)
+
 ## Sample usage
 
 ```tsx
@@ -54,7 +58,11 @@ const TextField = () => {
 
 ### Button props:
 
-See button props here <https://github.com/BrettThurs10/elora/blob/main/src/Button/index.tsx>
+<https://github.com/BrettThurs10/elora/blob/main/src/components/Button/IButton.tsx>
+
+### TextField props:
+
+<https://github.com/BrettThurs10/elora/blob/main/src/components/TextField/ITextField.tsx>
 
 ## License
 
