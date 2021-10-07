@@ -1,15 +1,15 @@
 import React from 'react'
+import IHeroIcon from './IHeroIcon'
 
 /**
  * @component for rendering Hero Icons.
  */
 
-interface Props {
-    iconType?: 'outline' | 'solid'
-    name: string
-}
-
-const Index = ({ iconType = 'outline', name }: Props) => {
+export const HeroIcon = ({
+    iconType = 'outline',
+    name,
+    width = '20px',
+}: IHeroIcon) => {
     const iconOutline = require('@heroicons/react/outline')
     const iconSolid = require('@heroicons/react/solid')
     let heroIcons = iconOutline
@@ -20,7 +20,9 @@ const Index = ({ iconType = 'outline', name }: Props) => {
     if (name) {
         Icon = heroIcons[name]
     }
-    return <Icon />
+    return (
+        <div style={{ width: width }}>
+            <Icon />
+        </div>
+    )
 }
-
-export default Index

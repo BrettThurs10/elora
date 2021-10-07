@@ -28,11 +28,10 @@ input {
     width: 1rem;
     margin-right: 5px;
     position: relative;
-    & svg {
+    & div {
         position: absolute;
-        top: 0.5rem;
-        left: 0.5rem;
-        width: 1rem;
+        top: 0.45rem;
+        left: 0.45rem;
     }
 }
 

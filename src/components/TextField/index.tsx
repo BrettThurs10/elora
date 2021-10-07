@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
 import ITextField from './ITextField'
-import HeroIcon from '../HeroIcon'
+import { HeroIcon } from '../HeroIcon'
 import * as styles from './textField.scss'
 
 /**
@@ -20,7 +20,11 @@ const Index = (props: ITextField) => {
         <div className={inputType === 'fullWidth' && styles.flexboxContainer}>
             {heroIconsName && (
                 <div className={styles.svgContainer}>
-                    <HeroIcon name={heroIconsName} iconType={iconType} />
+                    <HeroIcon
+                        width='18px'
+                        name={heroIconsName}
+                        iconType={iconType}
+                    />
                 </div>
             )}
             <input
