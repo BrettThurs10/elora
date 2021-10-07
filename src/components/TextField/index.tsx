@@ -1,6 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
 import ITextField from './ITextField'
+import HeroIcon from '../HeroIcon'
 import * as styles from './textField.scss'
 
 /**
@@ -15,21 +16,11 @@ const Index = (props: ITextField) => {
         inputType,
         ...rest
     } = props
-    const iconOutline = require('@heroicons/react/outline')
-    const iconSolid = require('@heroicons/react/solid')
-    let heroIcons = iconOutline
-    let Icon = undefined
-    if (iconType === 'solid') {
-        heroIcons = iconSolid
-    }
-    if (heroIconsName) {
-        Icon = heroIcons[heroIconsName]
-    }
     return (
         <div className={inputType === 'fullWidth' && styles.flexboxContainer}>
             {heroIconsName && (
                 <div className={styles.svgContainer}>
-                    <Icon />
+                    <HeroIcon name={heroIconsName} iconType={iconType} />
                 </div>
             )}
             <input
