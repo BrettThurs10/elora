@@ -16,7 +16,7 @@ Note: This library is still in it's infancy. The button element is available for
 
 ## Components
 
-Current components available are the button component and text field component. More to come soon!
+Current components available are the button component, text field component, and Hero Icon component. More to come soon!
 
 ## Hero Icons
 
