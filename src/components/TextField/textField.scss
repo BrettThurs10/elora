@@ -16,6 +16,9 @@ input {
     &.fullWidth {
         width: 100%;
     }
+    &.error {
+        border: 2px solid RGBA(var(--red), 1);
+    }
     &:hover {
         background-color: RGBA(var(--lightgray), 1);
     }
@@ -37,4 +40,11 @@ input {
 
 input.pl30 {
     padding-left: 30px;
+}
+
+p.errorText {
+    size: 8px;
+    font-style: italic;
+    color: RGBA(var(--red), 1);
+    margin-top: 5px;
 }

@@ -40,6 +40,12 @@ IconTextField.args = {
     inputType: 'icon',
 }
 
+export const ErrorTextField = Template.bind({})
+ErrorTextField.args = {
+    error: true,
+    errorMessage: 'This is the error message!',
+}
+
 export const CustomStyleTextField = Template.bind({})
 CustomStyleTextField.args = {
     style: {

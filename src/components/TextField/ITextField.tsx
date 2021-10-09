@@ -5,4 +5,6 @@ export default interface Props extends InputHTMLAttributes<HTMLInputElement> {
     heroIconsName?: string
     iconType?: 'outline' | 'solid'
     iconPosition?: 'right' | 'left'
+    error?: boolean
+    errorMessage?: string
 }

@@ -11,6 +11,8 @@ import * as styles from './textField.scss'
 const Index = (props: ITextField) => {
     const {
         heroIconsName,
+        error,
+        errorMessage,
         iconType = 'outline',
         iconPosition = 'left',
         inputType,
@@ -29,11 +31,15 @@ const Index = (props: ITextField) => {
             )}
             <input
                 className={classNames(
+                    error && styles.error,
                     inputType && styles[inputType],
                     inputType === 'icon' && styles.pl30
                 )}
                 {...rest}
             />
+            {error && errorMessage && (
+                <p className={styles.errorText}>{errorMessage}</p>
+            )}
         </div>
     )
 }
