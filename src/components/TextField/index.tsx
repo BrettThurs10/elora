@@ -10,6 +10,9 @@ import * as styles from './textField.scss'
 
 const Index = (props: ITextField) => {
     const {
+        required,
+        requiredMessage = 'Required.',
+        helperMessage,
         heroIconsName,
         error,
         errorMessage,
@@ -40,6 +43,12 @@ const Index = (props: ITextField) => {
             />
             {error && errorMessage && (
                 <p className={styles.errorText}>{errorMessage}</p>
+            )}
+            {required && (
+                <p className={styles.requiredText}>{requiredMessage}</p>
+            )}
+            {helperMessage && (
+                <p className={styles.helperText}>{helperMessage}</p>
             )}
         </div>
     )

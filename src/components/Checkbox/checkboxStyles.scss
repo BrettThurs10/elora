@@ -11,7 +11,7 @@ input.checkbox {
         height: 100%;
     }
     &.selected::before {
-        background: coral;
+        background: RGBA(var(--blue), 1);
         border-radius: 0.15rem;
     }
 }

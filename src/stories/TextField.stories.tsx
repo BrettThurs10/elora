@@ -46,6 +46,16 @@ ErrorTextField.args = {
     errorMessage: 'This is the error message!',
 }
 
+export const RequiredTextField = Template.bind({})
+RequiredTextField.args = {
+    required: true,
+}
+
+export const HelperTextField = Template.bind({})
+HelperTextField.args = {
+    helperMessage: 'Some helpful message.',
+}
+
 export const CustomStyleTextField = Template.bind({})
 CustomStyleTextField.args = {
     style: {

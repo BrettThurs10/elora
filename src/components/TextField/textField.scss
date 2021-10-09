@@ -42,9 +42,17 @@ input.pl30 {
     padding-left: 30px;
 }
 
-p.errorText {
-    size: 8px;
-    font-style: italic;
-    color: RGBA(var(--red), 1);
+p {
     margin-top: 5px;
+    size: 8px;
+    &.requiredText {
+        color: RGBA(var(--red), 1);
+    }
+    &.helperText {
+        color: RGBA(var(--gray), 1);
+    }
+    &.errorText {
+        font-style: italic;
+        color: RGBA(var(--red), 1);
+    }
 }

@@ -7,4 +7,6 @@ export default interface Props extends InputHTMLAttributes<HTMLInputElement> {
     iconPosition?: 'right' | 'left'
     error?: boolean
     errorMessage?: string
+    requiredMessage?: string
+    helperMessage?: string
 }
