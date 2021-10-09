@@ -1,7 +1,7 @@
 import classNames from 'classnames'
 import React from 'react'
 import ITextField from './ITextField'
-import { HeroIcon } from '../HeroIcon'
+import HeroIcon from '../HeroIcon'
 import * as styles from './textField.scss'
 
 /**
@@ -31,6 +31,7 @@ const Index = (props: ITextField) => {
             )}
             <input
                 className={classNames(
+                    styles.textField,
                     error && styles.error,
                     inputType && styles[inputType],
                     inputType === 'icon' && styles.pl30

@@ -5,7 +5,7 @@ import IHeroIcon from './IHeroIcon'
  * @component for rendering Hero Icons.
  */
 
-export const HeroIcon = ({
+const HeroIcon = ({
     iconType = 'outline',
     name,
     width = '20px',
@@ -26,3 +26,5 @@ export const HeroIcon = ({
         </div>
     )
 }
+
+export default HeroIcon

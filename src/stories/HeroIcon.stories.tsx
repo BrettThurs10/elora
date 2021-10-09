@@ -1,6 +1,6 @@
 import React, { ComponentProps } from 'react'
 import { Story, Meta } from '@storybook/react'
-import { HeroIcon } from '../components/HeroIcon'
+import HeroIcon from '../components/HeroIcon'
 
 export default {
     title: 'Hero Icon',
